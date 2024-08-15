@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkNest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to LinkNest</h1>
+
+        <!-- Dark Mode Toggle -->
+        <button id="toggleDarkMode">Toggle Dark Mode</button>
+
+        <!-- Background Color Picker -->
+        <input type="color" id="bgColorPicker" title="Choose Background Color">
+
+        <!-- Search Bar -->
+        <input type="text" id="search" placeholder="Search Links...">
+
+        <!-- Link Category -->
+        <select id="linkCategory">
+            <option value="social">Social Media</option>
+            <option value="work">Work</option>
+            <option value="personal">Personal Projects</option>
+        </select>
+
+        <!-- Link Title and URL Input -->
+        <input type="text" id="linkTitle" placeholder="Enter Link Title">
+        <input type="text" id="linkURL" placeholder="Enter Link URL">
+
+        <!-- Link Thumbnail Upload -->
+        <input type="file" id="linkThumbnail" accept="image/*">
+
+        <!-- Add Link Button -->
+        <button id="addLink">Add Link</button>
+
+        <!-- Link List -->
+        <ul id="linkList" class="sortable"></ul>
+
+        <!-- Export Links Button -->
+        <button id="exportLinks">Export Links</button>
+    </div>
+
+    <!-- Footer with Credit -->
+    <footer>
+        <p>Made by Csean</p>
+    </footer>
+
+    <!-- Sortable.js Library for Drag-and-Drop -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
